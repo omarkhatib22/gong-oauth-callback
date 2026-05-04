@@ -8,7 +8,7 @@
   const code = params.get('code');
   const error = params.get('error');
   if (code) {
-    window.location.href = 'http://127.0.0.1:7832/callback?code=' + encodeURIComponent(code);
+    window.location.href = 'http://127.0.0.1:9876/callback?code=' + encodeURIComponent(code);
   } else if (error) {
     document.body.innerHTML = '<p>Authorization failed: ' + error + '</p>';
   }
